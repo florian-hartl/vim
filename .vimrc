@@ -1,5 +1,6 @@
 execute pathogen#infect()
 execute pathogen#helptags()
+map <leader>td <Plug>TaskList
 let g:solarized_termcolors=256
 syntax on
 set background=dark
@@ -15,7 +16,6 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-map <leader>td <Plug>TaskList
 let mapleader = "_"
 map <leader>g :GundoToggle<CR>
 let g:pyflakes_use_quickfix = 0
@@ -24,6 +24,7 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 nmap <leader>a <Esc>:Ack!
+
 
 
 runtime! plugin/sensible.vim
