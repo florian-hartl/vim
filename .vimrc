@@ -2,6 +2,7 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 let python_highlight_all = 1
+let python_version_2 = 1
 set nu
 
 runtime! plugin/sensible.vim
