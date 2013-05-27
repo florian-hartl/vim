@@ -3,7 +3,7 @@ execute pathogen#helptags()
 let g:solarized_termcolors=256
 syntax on
 set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night-Bright
 filetype on
 filetype plugin indent on
 let python_highlight_all = 1
