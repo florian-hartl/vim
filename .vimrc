@@ -1,8 +1,10 @@
 execute pathogen#infect()
 execute pathogen#helptags()
+let g:solarized_termcolors=256
 syntax on
-filetype on
 set background=dark
+colorscheme solarized
+filetype on
 filetype plugin indent on
 let python_highlight_all = 1
 let python_version_2 = 1
