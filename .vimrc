@@ -25,7 +25,7 @@ let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 nmap <leader>a <Esc>:Ack!
 set hlsearch
-set tabstop=4 expandtab shiftwidth=4 softtabstop=4
+set tabstop=4 noexpandtab shiftwidth=4 softtabstop=4
 
 
 
