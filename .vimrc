@@ -34,3 +34,8 @@ set listchars=eol:$
 if has('persistent_undo')
   set noundofile
 endif
+
+"pig
+augroup filetypedetect 
+	au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
+augroup END
