@@ -19,7 +19,7 @@ let mapleader = "_"
 map <leader>td <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 let g:pyflakes_use_quickfix = 0
-let g:pep8_map='<leader>8'
+"let g:pep8_map='<leader>8'
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
@@ -31,6 +31,7 @@ set scrolloff=5
 set cursorline
 set noerrorbells
 set novisualbell
+inoremap jj <Esc>
 
 " move lines
 nnoremap º :m .+1<CR>==
