@@ -32,6 +32,8 @@ set cursorline
 set noerrorbells
 set novisualbell
 inoremap jj <Esc>
+" Set off the other paren
+highlight MatchParen ctermbg=3
 
 " move lines
 nnoremap º :m .+1<CR>==
