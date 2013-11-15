@@ -2,6 +2,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 let g:solarized_termcolors=256
 syntax on
+set list
 set background=dark
 colorscheme Tomorrow-Night-Bright
 filetype on
@@ -101,7 +102,7 @@ endfunction
 "autocmd VimLeave * silent !echo -ne "\<Esc>]50;CursorShape=0\x7"
 
 runtime! plugin/sensible.vim
-set listchars=eol:$
+"set listchars=eol:$
 if has('persistent_undo')
   set noundofile
 endif
