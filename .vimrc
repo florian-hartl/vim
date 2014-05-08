@@ -103,13 +103,21 @@ endfunction
 
 runtime! plugin/sensible.vim
 "set listchars=eol:$
-if has('persistent_undo')
-  set noundofile
-endif
 
-"pig
+" pig
 augroup filetypedetect 
 	au BufNewFile,BufRead *.pig set filetype=pig syntax=pig 
 augroup END
 
 set noundofile
+
+" for delimitMate
+inoremap <C-c> <CR><Esc>O
+
+" for vim-indent-guides
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0 ctermfg=237
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=235 ctermfg=237
+
+" for syntastic
+let g:syntastic_python_checkers = ['pyflakes']
