@@ -57,7 +57,7 @@
 	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate
+	url = https://github.com/HaFl/delimitMate.git
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic
