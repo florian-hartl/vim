@@ -21,24 +21,26 @@ let mapleader = "<"
 map <leader>td <Plug>TaskList
 map <leader>g :GundoToggle<CR>
 let g:pyflakes_use_quickfix = 0
-"let g:pep8_map='<leader>8'
+
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+
 set hlsearch incsearch ignorecase
 set tabstop=4 expandtab shiftwidth=4 softtabstop=4 ai
+
 let &colorcolumn="80,".join(range(120,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
+
 set scrolloff=5
 set cursorline
+
 set noerrorbells
 set novisualbell
+
 inoremap jj <Esc>
 
 let g:pydoc_cmd = 'python -m pydoc'
-
-"let g:indent_guides_enable_on_vim_startup = 1
-"let g:indent_guides_default_mapping = 1
 
 set laststatus=2
 
@@ -130,3 +132,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=235 ctermfg=237
 
 " for syntastic
 let g:syntastic_python_checkers = ['pyflakes']
+
+" for CommandT
+noremap <leader>o <Esc>:CommandT<CR>
+noremap <leader>O <Esc>:CommandTFlush<CR>
+noremap <leader>m <Esc>:CommandTBuffer<CR>
