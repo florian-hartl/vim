@@ -9,7 +9,9 @@ colorscheme Tomorrow-Night-Bright
 filetype plugin indent on
 let python_highlight_all = 1
 let python_version_2 = 1
-set nu
+" requires vim 7.4
+set relativenumber
+set number
 set foldmethod=indent
 set foldlevel=99
 map <c-j> <c-w>j
