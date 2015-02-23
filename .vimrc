@@ -137,7 +137,7 @@ let g:syntastic_python_checkers = ['pyflakes']
 map <leader>json :%!python -c 'import json, sys; print("\n".join([json.dumps(json.loads(_.strip()), indent=4) for _ in sys.stdin.readlines()]))'
 
 " yelp-main test files
-commandalias pfe PairFileEdit
-commandalias pfte PairFileTabEdit
-commandalias pfse PairFileSplitEdit
-commandalias pfve PairFileVSplitEdit
+noremap <leader>pfe :PairFileEdit<CR>
+noremap <leader>pfte :PairFileTabEdit<CR>
+noremap <leader>pfse :PairFileSplitEdit<CR>
+noremap <leader>pfve :PairFileVSplitEdit<CR>
