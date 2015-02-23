@@ -79,8 +79,8 @@
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule "/Users/fhartl/.vim/bundle/vim-hackernews"]
-	path = /Users/fhartl/.vim/bundle/vim-hackernews
+[submodule "bundle/vim-hackernews"]
+	path = bundle/vim-hackernews
 	url = https://github.com/ryanss/vim-hackernews
 [submodule "bundle/pair-files"]
 	path = bundle/pair-files
