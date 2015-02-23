@@ -125,11 +125,6 @@ augroup END
 
 set noundofile
 
-" for delimitMate
-inoremap <C-c> <CR><Esc>O
-" deactivate delimitMate
-let loaded_delimitMate = 1
-
 " for vim-indent-guides
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0 ctermfg=237
@@ -140,3 +135,9 @@ let g:syntastic_python_checkers = ['pyflakes']
 
 " json formatter
 map <leader>json :%!python -c 'import json, sys; print("\n".join([json.dumps(json.loads(_.strip()), indent=4) for _ in sys.stdin.readlines()]))'
+
+" yelp-main test files
+commandalias pfe PairFileEdit
+commandalias pfte PairFileTabEdit
+commandalias pfse PairFileSplitEdit
+commandalias pfve PairFileVSplitEdit

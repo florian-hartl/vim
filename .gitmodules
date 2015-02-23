@@ -82,3 +82,6 @@
 [submodule "/Users/fhartl/.vim/bundle/vim-hackernews"]
 	path = /Users/fhartl/.vim/bundle/vim-hackernews
 	url = https://github.com/ryanss/vim-hackernews
+[submodule "bundle/pair-files"]
+	path = bundle/pair-files
+	url = git://github.com/wting/pair_files.vim.git
