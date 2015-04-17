@@ -141,3 +141,6 @@ noremap <leader>pfe :PairFileEdit<CR>
 noremap <leader>pfte :PairFileTabEdit<CR>
 noremap <leader>pfse :PairFileSplitEdit<CR>
 noremap <leader>pfve :PairFileVSplitEdit<CR>
+
+" pydiction
+let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
