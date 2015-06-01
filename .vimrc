@@ -144,3 +144,12 @@ noremap <leader>pfve :PairFileVSplitEdit<CR>
 
 " pydiction
 let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
+
+" spell check
+set spell spelllang=en_us
+" zg to add word to word list
+" zw to reverse
+" zug to remove word from word list
+" z= to get list of possibilities
+highlight clear SpellBad
+highlight SpellBad cterm=underline ctermfg=red
