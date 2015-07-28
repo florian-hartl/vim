@@ -58,9 +58,6 @@
 [submodule "bundle/vim-fugitive"]
 	path = bundle/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "bundle/bundle/vim-airline"]
-	path = bundle/bundle/vim-airline
-	url = https://github.com/bling/vim-airline
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline
@@ -79,9 +76,6 @@
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule "bundle/vim-hackernews"]
-	path = bundle/vim-hackernews
-	url = https://github.com/ryanss/vim-hackernews
 [submodule "bundle/pair-files"]
 	path = bundle/pair-files
 	url = git://github.com/wting/pair_files.vim.git
