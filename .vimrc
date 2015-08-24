@@ -156,3 +156,5 @@ highlight SpellBad cterm=underline ctermfg=red
 highlight clear SpellCap
 highlight clear SpellRare
 highlight clear SpellLocal
+" actually disable it (enable before committing new code)
+au FileType python set nospell
