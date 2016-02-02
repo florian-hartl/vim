@@ -9,8 +9,8 @@ colorscheme Tomorrow-Night-Bright
 filetype plugin indent on
 let python_highlight_all = 1
 let python_version_2 = 1
-" requires vim 7.4
-set relativenumber
+" requires vim 7.4 (sometimes slows vim (+ tmux) down significantly)
+"set relativenumber
 set number
 set foldmethod=indent
 set foldlevel=99
@@ -158,3 +158,6 @@ highlight clear SpellRare
 highlight clear SpellLocal
 " actually disable it (enable before committing new code)
 au FileType python set nospell
+
+" json pretty print
+command J :%!python -m json.tool
