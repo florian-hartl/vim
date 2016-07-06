@@ -158,3 +158,6 @@ highlight clear SpellRare
 highlight clear SpellLocal
 " actually disable it (enable before committing new code)
 au FileType python set nospell
+
+" sql formatter configs
+let g:sqlutil_align_where = 0

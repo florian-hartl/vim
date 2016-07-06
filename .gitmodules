@@ -79,3 +79,9 @@
 [submodule "bundle/pair-files"]
 	path = bundle/pair-files
 	url = git://github.com/wting/pair_files.vim.git
+[submodule "bundle/SQLUtilities"]
+	path = bundle/SQLUtilities
+	url = https://github.com/vim-scripts/SQLUtilities.git
+[submodule "bundle/Align"]
+	path = bundle/Align
+	url = https://github.com/vim-scripts/Align.git
