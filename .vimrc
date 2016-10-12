@@ -164,3 +164,7 @@ let g:sqlutil_align_where = 0
 
 " json pretty print
 command J :%!python -m json.tool
+
+" speeeeed
+set lazyredraw
+set ttyfast
