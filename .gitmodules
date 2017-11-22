@@ -73,9 +73,6 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = https://github.com/tpope/vim-fireplace.git
-[submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
 [submodule "bundle/pair-files"]
 	path = bundle/pair-files
 	url = git://github.com/wting/pair_files.vim.git
