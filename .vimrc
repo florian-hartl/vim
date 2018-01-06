@@ -17,6 +17,8 @@ set number
 set novisualbell
 set noerrorbells
 set noundofile
+set nobackup
+set noswapfile
 set scrolloff=5
 
 " folding (`za` toggles folds)
