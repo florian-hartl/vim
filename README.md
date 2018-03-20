@@ -1,6 +1,6 @@
 Installation:
 
-    git clone git://github.com/HaFl/vim.git ~/.vim
+    git clone git://github.com/florian-hartl/vim.git ~/.vim
 
 Create symlinks:
 
