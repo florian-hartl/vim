@@ -7,6 +7,9 @@ let g:solarized_termcolors=256
 colorscheme Tomorrow-Night-Bright
 set background=dark
 
+" encoding
+set encoding=utf-8
+
 " leader
 let mapleader = ","
 
@@ -16,7 +19,7 @@ set backspace=2  " backspace over everything in insert mode
 set number
 set novisualbell
 set noerrorbells
-set noundofile
+set undodir=~/.vim/undodir
 set nobackup
 set noswapfile
 set scrolloff=5
@@ -48,6 +51,7 @@ map <c-h> <c-w>h
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
+autocmd CompleteDone * pclose  " automatically remove preview window after selection
 
 " toggles on gundo
 map <leader>g :GundoToggle<CR>
@@ -76,7 +80,7 @@ inoremap jj <Esc>
 let &colorcolumn="73,80,".join(range(120,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 set formatoptions+=t
-set textwidth=79
+set textwidth=120
 
 let g:pydoc_cmd = 'python -m pydoc'
 
