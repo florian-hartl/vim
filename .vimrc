@@ -172,3 +172,8 @@ set ttyfast
 " distracting. Hence, turned off by default.
 "runtime! plugin/sensible.vim
 "set listchars=eol:$
+
+" work with tags
+set tags=tags
+nnoremap <leader>. :CtrlPTag<cr>
+nnoremap <silent> <Leader>b :TagbarToggle<CR>
