@@ -38,7 +38,6 @@ set list
 " enhanced python syntax highlighting
 let python_highlight_all = 1
 let python_version_2 = 1  " python 3 highlighting is enabled by default
-let g:pyflakes_use_quickfix = 0  " tell pyflakes not to use quick fix window
 
 " buffer settings
 set hidden  " make sure that buffers can be hidden
@@ -134,8 +133,11 @@ set cursorline
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 
-" for syntastic
-let g:syntastic_python_checkers = ['pyflakes']
+" ale (code linting)
+let g:ale_linters = {
+\   'python': ['pyflakes'],
+\   'javascript': ['eslint'],
+\}
 
 " json options
 map <leader>json :%!python -c 'import json, sys; print("\n".join([json.dumps(json.loads(_.strip()), indent=4) for _ in sys.stdin.readlines()]))'
