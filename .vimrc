@@ -3,9 +3,9 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 " color scheme
-let g:solarized_termcolors=256
-colorscheme Tomorrow-Night-Bright
+colorscheme gruvbox
 set background=dark
+let g:gruvbox_contrast_dark = 'hard'
 
 " encoding
 set encoding=utf-8
@@ -53,6 +53,9 @@ let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 autocmd CompleteDone * pclose  " automatically remove preview window after selection
 
+" html specifics
+au FileType html set nowrap
+
 " toggles on gundo
 map <leader>g :GundoToggle<CR>
 
@@ -80,7 +83,7 @@ inoremap jj <Esc>
 let &colorcolumn="73,80,".join(range(120,999),",")
 highlight ColorColumn ctermbg=235 guibg=#2c2d27
 set formatoptions+=t
-set textwidth=120
+"set textwidth=120
 
 let g:pydoc_cmd = 'python -m pydoc'
 
@@ -130,12 +133,6 @@ set cursorline
 " use a | cursor in insert mode (works with tmux as well)
 let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
 let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-
-" vim-indent-guides
-" Turn on with `:IndentGuidesEnable`.
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=0 ctermfg=237
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=235 ctermfg=237
 
 " for syntastic
 let g:syntastic_python_checkers = ['pyflakes']
